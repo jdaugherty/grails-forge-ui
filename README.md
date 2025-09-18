@@ -4,7 +4,6 @@
 
 This project builds the [Grails Application Forge UI](https://start.grails.org).
 
-This is also served to Github Pages [https://grails.github.io/grails-forge-ui/](https://grails.github.io/grails-forge-ui/).
 
 ## To build the site for CI run:
 
@@ -53,7 +52,7 @@ npm ERR! A complete log of this run can be found in:
 npm ERR!     /Users/behl/.npm/_logs/2022-12-30T16_02_08_877Z-debug-0.log
 
 ```
-This happen due to latest version of Node JS, then you might need to set flag`--legacy-peer-deps` with `npm install` command.
+This happens due to latest version of Node.js, then you might need to set flag`--legacy-peer-deps` with `npm install` command.
 
 
 ## For local development mimicking production launch site:
@@ -74,13 +73,13 @@ npm run start:local
 
 ## Running a Grails Forge API locally to dev against
 
-If you want to run against a version of the starter api (Grails Starter Api)[https://github.com/grails/grails-forge]
+If you want to run against a version of the starter api (Grails Starter Api)[https://github.com/apache/grails-core/blob/-/grails-forge]
 
 Outside of this project pull down that repo
 
 ```bash
-git clone git@github.com:grails/grails-forge.git
-cd grails-forge
+git clone git@github.com:apache/grails-core.git
+cd grails-core/grails-forge
 export CORS_ALLOWED_ORIGIN=http://localhost:3000
 ./gradlew grails-forge-web-netty:run
 ```
