@@ -3,8 +3,8 @@ const VERSION_FEED_URL = "https://start.grails.org/grails-version-feed.json";
 const { startProxy, startVersionServer } = require("./commands");
 
 /**
- * Start a version server server and proxy servers for the current
- * Micronaut Starter versions mirroring production launch site
+ * Start a version server and proxy servers for the current
+ * Grails Starter versions mirroring production launch site
  * This will fetch the production feed, and create proxies for
  * each of the remote sites at incrementing ports starting at 8080
  */
