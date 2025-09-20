@@ -136,7 +136,7 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
       <p className="info">
         Once you’ve gotten your new project started, you can continue your
         journey by reviewing our{' '}
-        <a href="https://grails.org/documentation.html">documentation</a> and{' '}
+        <a href="https://grails.apache.org/documentation.html">documentation</a> and{' '}
         <a href="https://guides.grails.org/index.html">Grails Guides</a>
       </p>
     </Modal>

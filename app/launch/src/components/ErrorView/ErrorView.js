@@ -7,7 +7,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment'
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn'
 import Alert from '@material-ui/lab/Alert'
 
-import logo from '../../images/micronaut-white-icon.png'
+import logo from '../../images/grails-white-icon.png'
 import { copyToClipboard } from '../../utility'
 import './error-view.css'
 
