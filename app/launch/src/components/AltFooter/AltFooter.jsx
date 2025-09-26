@@ -2,15 +2,7 @@ const AltFooter = () => (
     <footer>
         <div className="content">
             <div className="apache-grails">
-                <p>Apache Grails (incubating) is an effort undergoing incubation at The Apache Software Foundation
-                    (ASF),
-                    sponsored by the <a href="https://groovy.apache.org" target="_blank" rel="noreferrer">Apache
-                        Groovy</a> project. Incubation is required of all newly accepted projects until a further review
-                    indicates that the infrastructure, communications, and decision making process have stabilized in a
-                    manner consistent with other successful ASF projects. While incubation status is not necessarily a
-                    reflection of the completeness or stability of the code, it does indicate that the project has yet
-                    to be
-                    fully endorsed by the ASF.</p>
+                <p>Apache Grails is supported by the Apache Software Foundation and the Grails community.</p>
                 <a href='https://apache.org'><img className='' src='https://www.apache.org/img/asf_logo.png'
                                                   width='300px'
                                                   alt='Apache Software Foundation'/></a>
