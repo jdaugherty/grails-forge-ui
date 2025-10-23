@@ -21,8 +21,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java }}
-      - name: Publish Grails Forge UI
-        run: ./publish.sh
+      - name: "🚀 Publish Grails Forge UI"
+        uses: apache/grails-github-actions/deploy-github-pages@asf
         env:
-          GITHUB_SLUG: grails/grails-forge-ui
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GRAILS_GHTOKEN }}
+          GRADLE_PUBLISH_RELEASE: 'false'
+          SOURCE_FOLDER: build/launch
+          TARGET_REPOSITORY: 'apache/grails-website'
+          TARGET_FOLDER: 'start'
+          DOCUMENTATION_BRANCH: 'asf-site-production'
