@@ -9,8 +9,8 @@ import StarterFormJavaVersion from './StarterFormJavaVersion'
 import StarterFormMicronautVersion from './StarterFormMicronautVersion'
 import StarterFormName from './StarterFormName'
 import StarterFormPackage from './StarterFormPackage'
-import StarterFormServlet from './StarterFormServlet'
 import StarterFormReloadingFramework from './StarterFormReloadingFramework'
+import StarterFormServlet from './StarterFormServlet'
 
 const StarterForm = ({ onError }) => {
   return (
