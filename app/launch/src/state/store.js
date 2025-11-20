@@ -378,7 +378,23 @@ export const useApplicationType = () => {
 
 export const useReloadingFramework = () => {
   const [value, setter] = useRecoilState(reloadingState)
-  const select = useSelectOptionsForType('reloading')
+  const defaultSelect = {
+      "options": [
+          {
+              "name": "devtools",
+              "description": "Spring Dev Tools",
+              "value": "DEVTOOLS",
+              "label": "Spring Boot Dev Tools"
+          }
+      ],
+      "defaultOption": {
+          "name": "devtools",
+          "description": "Spring Dev Tools",
+          "value": "DEVTOOLS",
+          "label": "Spring Boot Dev Tools"
+      }
+  }
+  const select = useSelectOptionsForType('reloading') ?? defaultSelect
   useDerivedDefultsEffect(select, setter)
   return [value, setter, select]
 }
